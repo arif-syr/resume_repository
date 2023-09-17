@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[T1]{fontenc}
 \input{glyphtounicode}
 
 
@@ -32,6 +33,9 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
+% TeX Gyre Pagella
+% \usepackage{tgpagella}
+\usepackage{tgpagella,eulervm}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -94,10 +98,12 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}
+{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\setlength{\footskip}{5pt}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,38 +118,70 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+  \textbf{\Huge \scshape Arif Syraj} \\ \vspace{1pt}
+  \small 929-271-7864 $|$ \href{mailto:x@x.com}{\underline{arif.syraj1@gmail.com}} $|$
+  \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/arifsyraj}} % $|$
+  % \href{https://github.com/...}{\underline{github.com/jake}}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-    \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of San Francisco}{San Francisco, CA}
+{Master of Science, Computer Science}{August 2023 -- Present}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+        \textbf{Relevant Coursework}{: Principles of Software Development, Foundations of A.I.}
+        }}
+\end{itemize}
+\resumeSubheading
+{University of Illinois at Urbana-Champaign}{Champaign, IL}
+{Bachelor of Science, Mechanical Engineering}{Aug. 2016 -- May 2021}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+        \textbf{Relevant Coursework}{: Discrete Structures, Data Structures \& Algorithms, Database Systems, Linear Algebra}
+        }}
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Programming}{: Python, Java, C++, JavaScript, HTML5, CSS3, Linux, Docker, ROS, SQL, RDBMS Design} \\
+        \textbf{General}{: Agile, Azure, Customer Service, Data Scraping, Data Analysis}
+        }}
+\end{itemize}
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
-      \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
-      \resumeItemListEnd
-      
+\resumeSubheading
+{Software Engineer}{March 2021 -- August 2022}
+{EarthSense, Inc.}{Champaign, IL}
+\resumeItemListStart
+\resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+\resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+\resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+\resumeItem{Worked on backend data analytics and robot navigation algorithms using mainly Python.}
+\resumeItem{Designed an algorithm to estimate plant height using occluded LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.}
+\resumeItem{Improved robot autonomy by designing novel turning maneuvers using GPS and a crash detection algorithm using LiDAR data and odometry. }
+\resumeItem{Introduced a culture of documentation and peer review for documentation in our workflows.}
+\resumeItem{Onboarded interns by giving them documentation with tasks to quickly familiarize them with our tech stack.}
+\resumeItem{Produced supplementary data from point-clouds generated through LiDAR data to improve existing algorithms.}
+\resumeItem{Extensively tested robot system functionality and created test methodologies to find software and hardware bugs.}
+\resumeItem{Caught several software bugs before deployment by implementing software in the loop testing.}
+\resumeItem{Traveled and met with our biggest clients to demo our robot's capabilities.}
+
+\resumeItemListEnd
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -154,65 +192,41 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Craigslist Apartment Scraper} \emph{}}{July 2023}
+\resumeItemListStart
+\resumeItem{A script I created to find an apartment in San Francisco. Craigslist was scraped to get information about listings, which was output to an HTML file to make it easier to browse dozens or hundreds of listings at a glance.}
+\resumeItem{Developed the Python script that scrapes listings according to desired rent, number of bedrooms, location, and shared rooms versus whole apartment listings.}
+\resumeItem{Queried OpenStreetMap for travel times to a work location by car, bike, or foot to sort listings by commute.}
+\resumeItem{Sorted scraped listings according to buckets of travel time, price, and date posted to find the right mix of conditions for an apartment.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Reddit Product Scraper} \emph{}}{March 2021}
+\resumeItemListStart
+\resumeItem{Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.}
+\resumeItem{Leveraged the Reddit API to scrape thousands of posts per minute to find products. }
+\resumeItem{Created a python script to print relevant info in a readable manner with hyperlinks to posts with the product for ease of use. }
+\resumeItem{Personally saved \$150 on \$500 worth of purchases.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-    }}
- \end{itemize}
-
+%-----------AWARDS/RECOGNITION-----------
+\section{Awards}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{University of San Francisco Computer Science Scholarship - Merit Based Award} \emph{}}{May 2023}
+\resumeProjectHeading
+{\textbf{EnterpriseWorks Top Summer Intern Award} \emph{}}{July 2021}
+\resumeItemListStart
+\resumeItem{Was awarded the top summer intern award for the 'Best Technical Innovation' category by the EnterpriseWorks Incubator.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
