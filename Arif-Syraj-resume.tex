@@ -112,15 +112,15 @@
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+%   \textbf{\href{website.com}{\Large Name}} & Email : \href{mailto:email}{email}\\
+%   \href{website.com/}{website.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
 \begin{center}
   \textbf{\Huge \scshape Arif Syraj} \\ \vspace{1pt}
-  \small 929-271-7864 $|$ \href{mailto:x@x.com}{\underline{arif.syraj1@gmail.com}} $|$
+  \small 929-271-7864 $|$ \href{mailto:arif.syraj1@gmail.com}{\underline{arif.syraj1@gmail.com}} $|$
   \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/arifsyraj}} % $|$
-  % \href{https://github.com/...}{\underline{github.com/jake}}
+  % \href{https://github.com/...}{\underline{github.com/username}}
 \end{center}
 
 
@@ -129,15 +129,16 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of San Francisco}{San Francisco, CA}
-{Master of Science, Computer Science}{August 2023 -- May 2025 (expected)}
+{Master of Science, Computer Science}{August 2023 -- May 2025}
 \begin{itemize}[leftmargin=0in, label={}]
   \small{\item{
         \textbf{Relevant Coursework}{: Principles of Software Development, Foundations of A.I.}
         }}
 \end{itemize}
+
 \resumeSubheading
 {University of Illinois at Urbana-Champaign}{Champaign, IL}
-{Bachelor of Science, Mechanical Engineering}{May 2021}
+{Bachelor of Science, Mechanical Engineering}{August 2016 - May 2021}
 \begin{itemize}[leftmargin=0in, label={}]
   \small{\item{
         \textbf{Relevant Coursework}{: Discrete Structures, Data Structures \& Algorithms, Database Systems, Linear Algebra}
@@ -147,50 +148,45 @@
 \resumeSubHeadingListEnd
 
 
-%
+% I think you can categorize skills better. 
+% Maybe have a section on Web Development and a section on Libraries and Tools. 
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
         \textbf{Programming}{: Python, Java, C++, JavaScript, HTML5, CSS3, SQL} \\
-        \textbf{General}{: Agile, Azure, Customer Service, Data Scraping, Data Analysis, RDBMS Design, Unit Testing} \\
+        \textbf{General}{: Agile, Data Scraping, Data Analysis, RDBMS Design, Unit Testing, Multithreading} \\
         \textbf{Frameworks/Tools}{: Linux, Docker, ROS, scikit-learn, MongoDB, React, Node.js, Express, JUnit}
         }}
 \end{itemize}
 
-
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
-
 \resumeSubheading
 {Software Engineer}{March 2021 -- August 2022}
 {EarthSense, Inc.}{Champaign, IL}
 \resumeItemListStart
-\resumeItem{Worked on backend data analytics and robot navigation algorithms using mainly Python.}
-\resumeItem{Designed an algorithm to estimate plant height using occluded LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.}
-\resumeItem{Improved robot autonomy by designing novel turning maneuvers using GPS and a crash detection algorithm using LiDAR data and odometry. }
-\resumeItem{Introduced a culture of documentation and peer review for documentation in our workflows.}
-\resumeItem{Onboarded interns by giving them said documentation along with tasks to quickly familiarize them with our tech stack.}
-\resumeItem{Produced supplementary data from point-clouds generated through LiDAR data to improve existing algorithms.}
-\resumeItem{Extensively tested robot system functionality and created test methodologies to find software and hardware bugs.}
-\resumeItem{Caught several software bugs before deployment by implementing software in the loop testing.}
-\resumeItem{Traveled and met with our biggest clients to demo our robot's capabilities.}
+\resumeItem{Designed an algorithm to estimate plant height using noisy LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.}
+\resumeItem{Revamped robot autonomy by designing a crash detection algorithm fusing LiDAR and odometry data collected from various environments, reducing overall false positives and negatives by 75\%.}
+\resumeItem{Greatly decreased need for manual waypoint recording by implementing automatic waypoint generation on turns, saving customers several minutes per data collection and improving robot autonomy.}
+\resumeItem{Introduced a culture of documentation in our workflows for libraries and testing methodologies, which I later used to onboard interns for a summer.}
+\resumeItem{Extensively tested robot system functionality, standardized testing methodologies and created utility shell scripts, helping catch several system bugs before deployment to customers.}
 
 \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     {Software Engineer I}{Oct 20XX - Sep 20XX}
 %     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%        \resumeItem{Lorem Ipsum}
+%          {Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum}
 %     \resumeItemListEnd
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
 \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -201,28 +197,36 @@
 \resumeItem{A script I created to find an apartment in San Francisco. Craigslist was scraped to get information about listings, which was output to an HTML file to make it easier to browse dozens or hundreds of listings at a glance.}
 \resumeItem{Developed the Python script that scrapes listings according to desired rent, number of bedrooms, location, and shared rooms versus whole apartment listings.}
 \resumeItem{Queried OpenStreetMap for travel times to a given work location by car, bike, or foot to sort listings by commute.}
-\resumeItem{Sorted scraped listings according to buckets of travel time, price, and date posted to find the right mix of conditions for an apartment.}
+
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Mindset} \emph{}}{November 2023}
+\resumeItemListStart
+\resumeItem{A wellness web-app with a task management system to help users track and quit addictions, track nutrition, sleep quality and focus on work.}
+\resumeItem{Set up server using Node.js with Express, authentication using Passport.js and Google OAuth2, and the database with Mongoose.}
+
 \resumeItemListEnd
 \resumeProjectHeading
 {\textbf{Reddit Product Scraper} \emph{}}{March 2021}
 \resumeItemListStart
 \resumeItem{Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.}
-\resumeItem{Leveraged the Reddit API to scrape thousands of posts per minute to find products. }
-\resumeItem{Created a python script to print relevant info in a readable manner with hyperlinks to posts for ease of use. }
+\resumeItem{Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.}
 \resumeItem{Personally saved \$150 on \$500 worth of purchases.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------AWARDS/RECOGNITION-----------
-\section{Awards}
+\section{Awards/Publications}
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{University of San Francisco Computer Science Scholarship - Merit Based Award} \emph{}}{May 2023}
+
 \resumeProjectHeading
 {\textbf{EnterpriseWorks Top Summer Intern Award} \emph{}}{July 2021}
 \resumeItemListStart
 \resumeItem{Was awarded the top summer intern award for the 'Best Technical Innovation' category by the EnterpriseWorks Incubator.}
 \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
