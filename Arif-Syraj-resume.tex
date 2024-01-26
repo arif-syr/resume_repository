@@ -67,12 +67,12 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -98,7 +98,7 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}
-{\begin{itemize}[leftmargin=0.15in, label={}]}
+{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -132,7 +132,7 @@
 {Master of Science, Computer Science}{August 2023 -- May 2025}
 \begin{itemize}[leftmargin=0in, label={}]
   \small{\item{
-        \textbf{Relevant Coursework}{: Principles of Software Development, Foundations of A.I.}
+        \textbf{Relevant Coursework}{: Principles of Software Development, Foundations of A.I., Systems Programming, Software Development Lifecycle}
         }}
 \end{itemize}
 
@@ -147,17 +147,13 @@
 
 \resumeSubHeadingListEnd
 
-
-% I think you can categorize skills better. 
-% Maybe have a section on Web Development and a section on Libraries and Tools. 
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Programming}{: Python, Java, C++, JavaScript, HTML5, CSS3, SQL} \\
-        \textbf{General}{: Agile, Data Scraping, Data Analysis, RDBMS Design, Unit Testing, Multithreading} \\
-        \textbf{Frameworks/Tools}{: Linux, Docker, ROS, scikit-learn, MongoDB, React, Node.js, Express, JUnit}
+        \textbf{Programming}{: Python, Java, C++, C, JavaScript, HTML5, CSS3, SQL} \\
+        \textbf{General}{: Agile, Data Scraping, Shell Scripting, RDBMS Design, Unit Testing, Multithreading, CI/CD, Automated Testing} \\
+        \textbf{Frameworks/Tools}{: Linux, Docker, ROS, tensorflow, scikit-learn, MongoDB, React, Node.js, Express, JUnit}
         }}
 \end{itemize}
 
@@ -165,7 +161,7 @@
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Software Engineer}{March 2021 -- August 2022}
+{Software Engineer}{March 2021 -- July 2022}
 {EarthSense, Inc.}{Champaign, IL}
 \resumeItemListStart
 \resumeItem{Designed an algorithm to estimate plant height using noisy LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.}
@@ -191,28 +187,29 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
+
 \resumeProjectHeading
 {\textbf{Craigslist Apartment Scraper} \emph{}}{July 2023}
 \resumeItemListStart
 \resumeItem{A Python web-scraping script that enables a user to browse hundreds of ads for rental accomodation on Craigslist in a fraction of the time it would take to do so using the website.}
 \resumeItem{Scraped results are output to HTML files in a readable manner according to a list of user-specified constraints on commute time, rent, number of bedrooms, location, shared versus whole apartments, and more.}
 \resumeItem{Allows a user to easily see commute times to a specified location by foot, bike, and car. This data is queried from OpenStreetMap and can be used to sort listings according to travel time buckets by a chosen mode of transport.}
-
 \resumeItemListEnd
+
 \resumeProjectHeading
 {\textbf{Mindset} \emph{}}{November 2023}
 \resumeItemListStart
 \resumeItem{A wellness web-app with a task management system to help users track and quit addictions, track nutrition, sleep quality and focus on work.}
 \resumeItem{Group project where we used Node.js with Express to set up the server, Passport.js and Google OAuth2 for authentication, and Mongoose to store user data.}
+\resumeItemListEnd
 
-\resumeItemListEnd
 \resumeProjectHeading
-{\textbf{Reddit Product Scraper} \emph{}}{March 2021}
+{\textbf{Fashion Image Classifier} \emph{}}{December 2023}
 \resumeItemListStart
-\resumeItem{Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.}
-\resumeItem{Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.}
-\resumeItem{Personally saved \$150 on \$500 worth of purchases.}
+\resumeItem{Used keras and tensorflow to adapt ViT (Vision Transformer) to classify fashion articles by training on the fashion\_mnist dataset.}
+\resumeItem{Achieved a train accuracy of 86.88\% after 4 epochs of training on 4000 images.}
 \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 %-----------AWARDS/RECOGNITION-----------
