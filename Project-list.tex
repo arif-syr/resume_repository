@@ -123,9 +123,9 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Programming}{: Python, Java, C++, C, JavaScript, HTML5, CSS3, SQL} \\
-        \textbf{General}{: Agile, Data Scraping, Data Analysis, RDBMS Design, Unit Testing, Multithreading, CI/CD, Containerization, Automated testing, Microservice architecture} \\
-        \textbf{Frameworks/Tools}{: Linux, Docker, ROS, tensorflow, scikit-learn, MySQL, React, Node.js, Express, JUnit, Shell scripting}
+        \textbf{Programming Languages}{: Python, Java, C, C++, JavaScript, HTML5, CSS3, SQL} \\
+        \textbf{General}{: Finetuning, Prompt Engineering, Agile, Data Scraping, Shell Scripting, Containerization, Multithreading, CI/CD, Automated Testing, Cloud Deployment, Network Protocols} \\
+        \textbf{Frameworks/Tools}{: Linux, AWS, GCP, Docker, ROS, pytorch, tensorflow, MongoDB, React, Node.js, Express, JUnit}
         }}
 \end{itemize}
 
@@ -139,35 +139,115 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Engineer}{March 2021 -- July 2022}
+{EarthSense, Inc.}{Champaign, IL}
+\resumeItemListStart
+\resumeItem{Designed an algorithm to estimate plant height using noisy LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.}
+\resumeItem{Revamped robot autonomy by designing a crash detection algorithm fusing LiDAR and odometry data collected from various environments, reducing overall false positives and negatives by 75\%.}
+\resumeItem{Greatly decreased need for manual waypoint recording by implementing automatic waypoint generation on turns, saving customers several minutes per data collection and improving robot autonomy.}
+\resumeItem{Introduced a culture of documentation in our workflows for libraries and testing methodologies, which I later used to onboard interns for a summer.}
+\resumeItem{Extensively tested robot system functionality, standardized testing methodologies and created utility shell scripts, helping catch several system bugs before deployment to customers.}
+
+\resumeItemListEnd
+\resumeSubheading
+{Teaching and Research Assistant - AI For Redistricting}{January 2025 -- May 2025}
+{University of San Francisco}{San Francisco, CA}
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 20XX - Sep 20XX}
+%     \resumeItemListStart
+%        \resumeItem{Lorem Ipsum}
+%          {Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Template} \emph{}}{Month Year}
+{\underline{\textbf{Template}} \emph{}}{Month Year}
 \resumeItemListStart
 \resumeItem{}
 \resumeItem{}
-
 \resumeItemListEnd
+
 \resumeProjectHeading
-{\textbf{Craigslist Apartment Scraper} \emph{}}{July 2023}
+{\underline{\textbf{Duets AI - backend focus}} \emph{}}{August - December 2025}
+\resumeItemListStart
+\resumeItem{}
+\resumeItem{}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\underline{\textbf{Duets AI - LLM focus}} \emph{}}{August - December 2025}
+\resumeItemListStart
+\resumeItem{}
+\resumeItem{}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\underline{\textbf{Duets AI}} \emph{}}{August - December 2025}
+\resumeItemListStart
+\resumeItem{Led a 3-person industry-sponsored team to ship LLM, backend and frontend features for an AI-augmented language-learning web app using OpenAI, Python, Django and Azure.}
+\resumeItem{Cut company-wide LLM spend by 80\% by switching models, prompt engineering, and backend changes.}
+\resumeItem{Lowered server and storage costs by 30\% by reworking frontend and backend logic, and migrating tens of thousands of hot data entries from cold storage to Supabase.}
+\resumeItem{Built meeting transcript-based exercise generation; added checks, retries, and fallbacks to make it 99.9\% reliable.}
+\resumeItem{Coordinated scope and delivery with sponsors and two student teams; enforced issue/PR tracking and review standards to keep releases moving efficiently and to avoid breaking merges.}
+\resumeItemListEnd
+
+
+\resumeProjectHeading
+{\underline{\textbf{Highly Available Cloud Application Deployment}} \emph{}}{October 2024}
+\resumeItemListStart
+\resumeItem{Architected and deployed a highly available, secure application on AWS using ECR, EC2, ALB, VPC, and ASGs.}
+\resumeItem{Configured an ALB to distribute traffic across EC2 instances in private subnets across multiple AZ's with launch templates and auto-scaling groups, enhancing scalability, security and availability.}
+\resumeItem{Improved operational security by launching bastion hosts across availability zones using ASGs for highly available, secure SSH access to EC2 instances.}
+\resumeItem{Set up TLS encryption using ACM and Route 53 for domain management and HTTPS-encrypted communication.}
+\resumeItem{Deployed a containerized application orchestrated with ECS.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\underline{\textbf{LLM's To Detect Chart Misinformation}} \emph{}}{August 2024}
+\resumeItemListStart
+\resumeItem{Finetuned a multimodal LLM (LLaVA) to detect visual misinformation in bar charts with LoRA and 2.3k examples.}
+\resumeItem{Created a custom finetuning script and explored parameters to prevent overfitting and minimize GPU loads.}
+\resumeItem{Resulted in a model that can identify visually manipulated bar charts 90\% of the time.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\underline{\textbf{Syllabus Generator}} \emph{}}{May 2024}
+\resumeItemListStart
+\resumeItem{Used low-cost LLMs and crewAI to coordinate the automatic generation of a syllabus using basic course info.}
+\resumeItem{Implemented prompt engineering techniques to optimize syllabus generation, significantly improving output.}
+\resumeItem{Developed a microservice using FastAPI that talks to large LLM's like ChatGPT for automated syllabus generation.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\underline{\textbf{Craigslist Apartment Scraper}} \emph{}}{July 2023}
 \resumeItemListStart
 \resumeItem{A Python web-scraping script that enables a user to browse hundreds of ads for rental accomodation on Craigslist in a fraction of the time it would take to do so using the website.}
 \resumeItem{Scraped results are output to HTML files in a readable manner according to a list of user-specified constraints on commute time, rent, number of bedrooms, location, shared versus whole apartments, and more.}
 \resumeItem{Allows a user to easily see commute times to a specified location by foot, bike, and car. This data is queried from OpenStreetMap and can be used to sort listings according to travel time buckets by a chosen mode of transport.}
-
 \resumeItemListEnd
+
 \resumeProjectHeading
-{\textbf{Mindset} \emph{}}{November 2023}
+{\underline{\textbf{Mindset}} \emph{}}{November 2023}
 \resumeItemListStart
 \resumeItem{A wellness web-app with a task management system to help users track and quit addictions, track nutrition, sleep quality and focus on work.}
 \resumeItem{Group project where we used Node.js with Express to set up the server, Passport.js and Google OAuth2 for authentication, and Mongoose to store user data.}
-
 \resumeItemListEnd
+
 \resumeProjectHeading
-{\textbf{Reddit Product Scraper} \emph{}}{March 2021}
+{\underline{\textbf{Reddit Product Scraper}} \emph{}}{March 2021}
 \resumeItemListStart
 \resumeItem{Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.}
 \resumeItem{Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.}
@@ -175,23 +255,20 @@
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Blackjack Agent} \emph{}}{November 2023}
+{\underline{\textbf{Blackjack Agent}} \emph{}}{November 2023}
 \resumeItemListStart
 \resumeItem{Developed an agent to play blackjack against humans using Q-learning as a reinforcement learning algorithm.}
 \resumeItem{Simulated an environment to teach an agent to optimize decision making by balancing exploration and exploitation.}
 \resumeItem{Used matplotlib and the learned policy of the agent to visualize agent policy.}
-
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Fashion Image Classifier} \emph{}}{December 2023}
+{\underline{\textbf{Fashion Image Classifier}} \emph{}}{December 2023}
 \resumeItemListStart
 \resumeItem{Used keras and tensorflow to adapt ViT (Vision Transformer) to classify fashion articles by training on the fashion\_mnist dataset.}
 \resumeItem{Achieved a train accuracy of 86.88\% after 4 epochs of training on 4000 images.}
-
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
 %-------------------------------------------
 \end{document}
